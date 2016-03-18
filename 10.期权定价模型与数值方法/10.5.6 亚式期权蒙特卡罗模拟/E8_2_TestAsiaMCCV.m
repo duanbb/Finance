@@ -1,0 +1,10 @@
+%注
+S0=50;%股票当前股票当前价格
+K=50;%执行价
+r=0.1;%无风险利率
+T=5/12;%到期
+sigma=0.4;%股票波动的标准差
+NSamples=5;%时间离散步数
+NRepl=45000;%模拟路径数目
+NPilot=5000;%样本路径数量
+[P,CI]=AsianMCCV(S0,K,r,T,sigma,NSamples,NRepl,NPilot)
